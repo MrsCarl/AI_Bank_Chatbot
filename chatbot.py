@@ -684,8 +684,8 @@ import torch
 
 model_name = "meta-llama/Llama-2-7b-chat-hf"
 
-tokenizer = LlamaTokenizer.from_pretrained(model_name, use_auth_token="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")
-model = LlamaForCausalLM.from_pretrained(model_name, use_auth_token="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", torch_dtype=torch.float16, device_map="auto")
+tokenizer = LlamaTokenizer.from_pretrained(model_name, use_auth_token="<Token_Here>")
+model = LlamaForCausalLM.from_pretrained(model_name, use_auth_token="<Token_Here>", torch_dtype=torch.float16, device_map="auto")
 
 # Function to predict intent
 def predict_intent(text):
